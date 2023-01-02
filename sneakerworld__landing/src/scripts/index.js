@@ -1,6 +1,5 @@
-import { testFunc } from "./utils/utils.js";
+import slider from "./components/slider.js";
 
 window.addEventListener('DOMContentLoaded', () => {
-	console.log('Hello from gulp :)');
-	testFunc();
+	slider();
 });

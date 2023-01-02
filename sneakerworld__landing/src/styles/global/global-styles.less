@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	// font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: 'Inter', sans-serif, 'Arial', sans-serif;
 }
 
 .visually-hidden {
@@ -13,16 +13,23 @@
 	clip: rect(0 0 0 0);
 }
 
+.container {
+	margin: 0 auto;
+	max-width: @desctope-width;
+}
+
 .body {
 	margin: 0;
 	padding: 0;
-	// font-family: "PT Sans", "Arial", sans-serif;
-	background-color: #ffffff;
+	font-family: 'Inter', sans-serif, 'Arial', sans-serif;
+	background-color: @bg-color;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
 
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+	flex-direction: column;
+	justify-content: space-between;
 
 	&--scrolloff {
 		overflow: hidden;

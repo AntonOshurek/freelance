@@ -8,15 +8,87 @@
 	<title>Sneakerworld</title>
 
 	<link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-<!-- <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> -->
-<!-- <link rel="apple-touch-icon" href="images/favicons/apple.png"> 180×180 -->
-<!-- <link rel="manifest" href="manifest.webmanifest"> -->
+	<!-- <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> -->
+	<!-- <link rel="apple-touch-icon" href="images/favicons/apple.png"> 180×180 -->
+	<!-- <link rel="manifest" href="manifest.webmanifest"> -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&family=Kadwa&family=Plus+Jakarta+Sans:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet">
+	<!--
+		font-family: 'Inter', sans-serif;
+		font-family: 'Kadwa', serif;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-family: 'Poppins', sans-serif;
+	-->
 
 	<link rel="stylesheet" href="styles/style.min.css">
 </head>
 <body class="body">
-	<h1 class="body__title">Sneakerworld</h1>
+	<header class="header container">
+		<img class="header__logo" src="./images/sneakerworld-logo.svg" width="250" alt="">
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" href="#">Home</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">Services</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">About Us</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="account-controls">
+			<button class="account-controls__button account-controls__button--login" type="button">Login</button>
+			<button class="account-controls__button account-controls__button--account" type="button">Account</button>
+		</div>
+	</header>
 
+	<main class="main container">
+		<section class="info">
+			<h2 class="info__title">Every Purchase will be made with Pleasure</h2>
+			<p class="info__subtitle">We care about your financial achievements and thats why we help with your fiancial planning</p>
+
+			<div class="search">
+				<label class="search__label">
+					<input class="search__input" type="text" placeholder="Search for a sneaker or brand name">
+				</label>
+				<button class="search__button" type="button">search</button>
+			</div>
+		</section>
+
+		<section class="slider">
+
+			<div class="slider__overview">
+				<div class="slider__inner">
+					<div class="slider__item">
+						<img class="slider__image" src="./images/image-1.png" alt="">
+					</div>
+					<div class="slider__item">
+						<img class="slider__image" src="./images/image-1.png" alt="">
+					</div>
+					<div class="slider__item">
+						<img class="slider__image" src="./images/image-1.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="slider__controls">
+				<!-- <label class="custom-radio">
+					<input class="custom-radio__input" name="slider" type="radio" value="1">
+					<span class="cuctom-radio__box"></span>
+				</label>
+				<label class="custom-radio">
+					<input class="custom-radio__input" name="slider" type="radio" value="2" checked>
+					<span class="cuctom-radio__box"></span>
+				</label>
+				<label class="custom-radio">
+					<input class="custom-radio__input" name="slider" type="radio" value="3">
+					<span class="cuctom-radio__box"></span>
+				</label> -->
+			</div>
+		</section>
+	</main>
 
 	<script src="./scripts/bundle.js"></script>
 </body>
